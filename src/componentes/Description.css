@@ -1,0 +1,95 @@
+*{
+  background-color: #181C26;
+  
+  
+}
+
+.detail {
+  margin-left: 8%;
+  margin-top: 15%;
+  /* background-color: aqua; */
+  height: 415px;
+  width: fit-content !important;
+}
+
+.detail h1 {
+  font-size: 50px;
+  width: fit-content;
+  /* color: #212121; */
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.detail p {
+  font-size: medium;
+  font-family: serif;
+  /* color: #212121; */
+  width: fit-content;
+
+  color: #fff;
+}
+
+span {
+  /* color: orange; */
+  color: #EEC673;
+}
+
+
+
+.detail a {
+  /* background: #212121; */
+  background: #EEC673;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #181C26;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.detail a:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  /* transform: translatey(-0.25em); */
+   background-color: #fff;
+   color: #212121;
+
+}
+.image {
+  position: absolute;
+  width: 50%;
+  height: 85%;
+  bottom: 0;
+  right: 100px;
+  bottom: 0.2%;
+
+  
+}
+
+.image img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+ 
+
+}
+
+.image:hover .shap{ 
+   bottom: 40px;
+   
+}.image:hover .girl{ 
+   left: 45%;
+}
+
+@media(max-width:1080px) {
+  .image {
+     display: none;
+
+  }
+
+
+}
+
