@@ -22,7 +22,7 @@ li{
     width: 100%;
     height: 10rem;
     /* background-color: rgb(233, 233, 241); */
-    /* background-color: #181C26; */
+    /* background-color: #EEC673; */
     /* background: linear-gradient(to bottom, #181C26, #0D1016); */
 position: relative;
     /* background-color: #181C26; */
@@ -88,7 +88,7 @@ position: relative;
 
 li:before{
     content: '';   
-    /* background: #EEC673; */
+    background: #EEC673;
     display: block;
     position: absolute;
     bottom: -2px;

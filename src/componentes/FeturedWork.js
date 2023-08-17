@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './FeturedWork.css'; // Adjust the CSS import path as needed
+import './FeturedWork.css'; 
 import "aos/dist/aos.css";
 import Aos from "aos";
 import SwiperCore, { Swiper, Navigation } from 'swiper';
@@ -72,10 +72,10 @@ const Feature = () => {
         </div>
       </div>
       <ul className="sci">
-        <li>
+        <li className='x'>
           <a href='project-1-preview-url' onClick={show}>Preview</a>
         </li>
-        <li>
+        <li >
           <a href="project-1-github-url">GitHub</a>
         </li>
       </ul>
@@ -118,7 +118,7 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                         <li>
-                            <a href='https://the-stream-frontend.vercel.app/' onClick={show}>preview</a>
+                            <a className="preview" href='https://the-stream-frontend.vercel.app/' onClick={show}>preview</a>
                         </li>
                         <li>
                             <a href="https://github.com/Divyakush13/Foodies">Buy</a>
