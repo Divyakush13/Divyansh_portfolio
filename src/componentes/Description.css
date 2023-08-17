@@ -78,12 +78,12 @@ span {
 }
 .shap{
   /* filter: grayscale(100%); */
-  background:red;
+  /* background:red; */
   border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% ;
 }
 .image:hover .shap{ 
    bottom: 40px;
-   background-color: red;
+   /* background-color: red; */
 
 }.image:hover .girl{ 
    left: 45%;
