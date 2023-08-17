@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Contect.css";
 const Contect = () => {
+  const [isSuccessVisible, setIsSuccessVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

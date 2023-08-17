@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     height: 350px;
-    /* background-color: #181C26; */
     background-color: #151821;
 }
 
@@ -27,7 +26,6 @@
 
 .slogan span {
     background-color: transparent;
-    font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -49,7 +47,6 @@
     margin-top: 400px;
     margin-left: 40%;
     border-radius: 5px;
-    /* background-color: whitesmoke; */
     background-color:  #181C26;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -64,8 +61,7 @@
     width: 300px;
     align-self: center;
     background-color: transparent;
-    /* border: 2px solid black;
-    border-radius: 10px; */
+    
     border: none;
     color: #EEC673;
 
@@ -82,9 +78,7 @@
     color: black;
     width: 300px;
     align-self: center;
-    /* background-color: whitesmoke; */
-    /* border: 2px solid black; */
-    /* border-radius: 10px; */
+    
     resize: none;
     border: none;
     color:#EEC673;
@@ -121,3 +115,5 @@
   .success-message.visible {
     opacity: 1;
   }
+
+  

@@ -62,7 +62,7 @@ span {
   bottom: 0;
   right: 100px;
   bottom: 0.2%;
-
+  /* background-color: red; */
   
 }
 
@@ -73,15 +73,21 @@ span {
   bottom: 0%;
   transform: translateX(-50%);
   transition: bottom 1s, left 1s;
- 
-
+  background-color: transparent;
+  
 }
-
+.shap{
+  /* filter: grayscale(100%); */
+  background:red;
+  border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% ;
+}
 .image:hover .shap{ 
    bottom: 40px;
-   
+   background-color: red;
+
 }.image:hover .girl{ 
    left: 45%;
+
 }
 
 @media(max-width:1080px) {

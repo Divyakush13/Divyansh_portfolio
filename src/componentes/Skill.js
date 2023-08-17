@@ -5,6 +5,20 @@ import signature from '../Images/signature.png'
 import './Skill.css';
 
 const skill = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 5000,
+            behavior: 'smooth'
+        });
+    }; 
+
+    const buy = () => {
+        window.scrollTo({
+            top: 2000,
+            behavior: 'smooth'
+        });
+    };
     return (
         <>
             <div className='skill'>
@@ -13,15 +27,13 @@ const skill = () => {
                     <div className='anoutmepara'>
                         <h1 data-aos="fade-in"  data-aos-anchor-placement="center-bottom" >- About me</h1>
 
-                        <p  data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >You’re about to learn how easy that is to achieve.<br></br>
-                            You’ll even get software You’re about to learn how easy that is to achieve. You’ll even get software developer resume examples to see exactly how it’s done. Read on, and you'll see how to write a job-winning resume for software engineer and developer jobs as robust as your finest code.
-                            You’re about to learn how easy that is to achieve. You’ll even get software developer resume examples to see exactly how it’s done. Read on, and you'll see how to write a job-winning resume for software engineer and developer jobs as robust as your finest code. developer resume examples to see exactly how it’s done. Read on, and you'll see how to write a job-winning resume for software engineer and developer jobs as robust as your finest code.</p>
-
+                        <p  data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >
+"Hey, I'm Divyansh Kushwah, a passionate web developer and freelancer. With a knack for creating functional and visually appealing websites, I've tackled numerous projects that have enriched my skills. My software engineering background equips me with the problem-solving prowess to ensure both the aesthetics and functionality of my work. I'm all about embracing new challenges and staying at the forefront of the ever-changing web development realm."</p>
                         <img  data-aos="fade-up"  data-aos-anchor-placement="center-bottom" className='signature' src={signature}  />
 
                         <div className='button'>
-                            <a href='Resume.pdf'  data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >Hire me</a>
-                            <a href='Resume.pdf'  data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >hii</a>
+                            <a  onClick={scrollToTop}   data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >Hire me</a>
+                            <a  onClick={buy} data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >Buy projects</a>
                         </div>
 
                     </div>

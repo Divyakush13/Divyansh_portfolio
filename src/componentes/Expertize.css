@@ -1,56 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gloria+Hallelujah&family=Josefin+Sans:wght@300&family=Kanit:wght@100&family=Monoton&family=Montserrat:wght@900&family=Playfair+Display:ital,wght@1,600&display=swap');
-/* 
-.Expertize_main_con{
-    display: flex;
-    height: 600px;
-    flex-direction: column;
-    justify-content: center;
-    background-color: aqua;
-    align-items: center;
-
-}
-.Expertizes{
-    display: flex;
-    align-items: center;
-    height: fit-content;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-.all{
-    display: flex;
-    background-color: blue;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(231, 238, 238);
-
-}
-.Exdetail{
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid red;
-  padding: 20px;
-  margin-inline: 50px;
-  height: 200px;
-  border-radius: 10px;
-  
-
-}
-.Exdetail h2{
-    color: whitesmoke;
-}
-.Exdetail p{
-    color: aliceblue;
-}
-
-.Exdetail :hover{
-
-} */
 .myExpertise{
   margin-top: 100px;
   background: transparent;
@@ -60,8 +8,6 @@
   margin-bottom: 20px;
   font-size: 25px;
 }
-
-
 
 .explainer span{
      background-color: transparent;
@@ -159,6 +105,7 @@
     position: absolute;
     will-change: transform;
     color: #fff;
+    background-color: transparent;
     /* text-shadow: 0 0 5px rgba(100, 100, 255, 0.6); */
     /* margin-left: 28%; */
   }
@@ -207,7 +154,7 @@
 
 }
 .ref {
-  background-color: #000;
+  /* background-color: #000; */
   background-image: linear-gradient(to bottom, #d80, #c00);
   border-radius: 3px;
   padding: 7px 10px;
