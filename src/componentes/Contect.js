@@ -77,7 +77,7 @@ const Contect = () => {
             value={formData.message}
             onChange={handleChange}
           />
-          <button className='sentbtn' onClick={handleSubmit}>Send Message</button>
+          <button className='sentbtn' onClick={handleSubmit}>Send narendra</button>
         </div>
 
         {showSuccessMessage && (
