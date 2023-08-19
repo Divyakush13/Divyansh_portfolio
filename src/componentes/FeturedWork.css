@@ -130,6 +130,9 @@
   margin: 20px 0 10px;
   line-height: 1.1em;
   background: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 .contentBx{
   background-color: transparent;

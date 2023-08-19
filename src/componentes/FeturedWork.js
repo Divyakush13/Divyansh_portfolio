@@ -58,50 +58,7 @@ const Feature = () => {
             spaceBetween={20}
             loop={true}
           >
-  <div className="swiper-slide">
-              {/* Content for the first slide */}
-            </div>
-            <div className="swiper-slide">
-    <div className="card">
-      <div className="content">
-        <div className="imgBx">
-          <img src="image-url-1.jpg" alt="Project 1" />
-        </div>
-        <div className="contentBx">
-          <h3>Project 1 Title<br /><span>Project 1 Description</span></h3>
-        </div>
-      </div>
-      <ul className="sci">
-        <li className='x'>
-          <a href='project-1-preview-url' onClick={show}>Preview</a>
-        </li>
-        <li >
-          <a href="project-1-github-url">GitHub</a>
-        </li>
-      </ul>
-    </div>
-  </div>
   
-  <div className="swiper-slide">
-    <div className="card">
-      <div className="content">
-        <div className="imgBx">
-          <img src="image-url-2.jpg" alt="Project 2" />
-        </div>
-        <div className="contentBx">
-          <h3>Project 2 Title<br /><span>Project 2 Description</span></h3>
-        </div>
-      </div>
-      <ul className="sci">
-        <li>
-          <a href='project-2-preview-url' onClick={show}>Preview</a>
-        </li>
-        <li>
-          <a href="project-2-github-url">GitHub</a>
-        </li>
-      </ul>
-    </div>
-  </div>
             {/* Add more slides as needed */}
           </Swiper>
           ) : (
@@ -118,10 +75,10 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                         <li>
-                            <a className="preview" href='https://the-stream-frontend.vercel.app/' onClick={show}>preview</a>
+                            <a className="preview" href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Divyakush13/Foodies">Buy</a>
+                            <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                         </li>
                     </ul>
                 </div>
@@ -137,10 +94,10 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                         <li>
-                            <a href='https://the-stream-frontend.vercel.app/' onClick={show}>preview</a>
+                            <a href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Divyakush13/Foodies">Buy</a>
+                            <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                         </li>
                     </ul>
                 </div>
@@ -156,10 +113,10 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                         <li>
-                            <a href='' onClick={show}>preview</a>
+                            <a href='' onClick={show}  target="_blank" >preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Divyakush13/Socialmeadia">Buy</a>
+                            <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                         </li>
                     </ul>
                 </div>
@@ -176,10 +133,10 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                         <li>
-                            <a href=''  onClick={show} >preview</a>
+                            <a href=''  onClick={show}   target="_blank" >preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Divyakush13/Socialmeadia">Buy</a>
+                            <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                         </li>
                     </ul>
                 </div>
@@ -195,13 +152,52 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                         <li>
-                            <a href='' onClick={show}>preview</a>
+                            <a href='' onClick={show} target="_blank"  >preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Divyakush13/aExpress">Buy</a>
+                            <a href="https://github.com/Divyakush13/aExpress"  target="_blank" >Buy</a>
                         </li>
                     </ul>
                 </div>
+
+                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                    <div className="content">
+                        <div className="imgBx">
+                            <img src="https://cdn.dribbble.com/users/209662/screenshots/3272140/jewellery_e-commerce_app_concept_by_tubik.gif" alt="src\Images\girl.png" />
+                        </div>
+                        <div className="contentBx">
+                            <h3>Dk Jewellers<br/><span>Jewellery Shop</span></h3>
+                        </div>
+                    </div>
+                    <ul className="sci">
+                        <li>
+                            <a href='https://divyanshkushwahin.wordpress.com/' onClick={show} target="_blank" >preview</a>
+                        </li>
+                        <li>
+                            <a href="">Buy</a>
+                        </li>
+                    </ul>
+                </div>
+  
+                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                    <div className="content">
+                        <div className="imgBx">
+                            <img src="https://cdn.dribbble.com/users/209662/screenshots/3272140/jewellery_e-commerce_app_concept_by_tubik.gif" alt="src\Images\girl.png" />
+                        </div>
+                        <div className="contentBx">
+                            <h3>Fact with us<br/><span>MY Blog</span></h3>
+                        </div>
+                    </div>
+                    <ul className="sci">
+                        <li>
+                            <a href='https://kushwahdivyansh2.wixsite.com/website' onClick={show} target="_blank" >preview</a>
+                        </li>
+                        <li>
+                            <a href="">Buy</a>
+                        </li>
+                    </ul>
+                </div>
+
                 </>
           )}
                 {/* ... */}
