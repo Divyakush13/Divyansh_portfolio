@@ -182,10 +182,10 @@ const Feature = () => {
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
                     <div className="content">
                         <div className="imgBx">
-                            <img src="https://cdn.dribbble.com/users/209662/screenshots/3272140/jewellery_e-commerce_app_concept_by_tubik.gif" alt="src\Images\girl.png" />
+                            <img src="https://static.wixstatic.com/media/eb9dc8_8b6244700fed475093a79029782b060d~mv2.gif" alt="src\Images\girl.png" />
                         </div>
                         <div className="contentBx">
-                            <h3>Fact with us<br/><span>MY Blog</span></h3>
+                            <h3>Fact with us<br/><span>My Blog</span></h3>
                         </div>
                     </div>
                     <ul className="sci">
