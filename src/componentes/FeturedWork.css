@@ -228,26 +228,10 @@
   100% { transform: rotate(360deg); }
 }
 
-@media screen and (max-width: 600px) {
-  /* .containermain{
-       background-color: red;
-    >.container{
-        background-color: #f8d7da;
-        >.card{
-          position: static;
-          z-index: inherit;
-
-        }
-    }
-  } */
-
-
-  /* FeturedWork.css */
-
-
-/* Styles for Swiper container */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+  
 .swiper-container {
-  margin-top: 20px; /* Adjust spacing as needed */
+  margin-top: 20px; 
   width: 100%;
   height: auto;
 }
@@ -300,5 +284,29 @@
   transform: translateX(-100%) rotate(-30deg);
   opacity: 0;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.containermain{
+  /* background-color: red; */
+  /* max-height: 500px; */
+
+}
+.container{
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  max-height: 500px;
+  scroll-behavior: smooth;
+
+}
+.card{
+  /* width: 100%; */
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  scroll-behavior: smooth;
 }
 }

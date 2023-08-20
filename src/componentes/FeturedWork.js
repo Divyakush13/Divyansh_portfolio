@@ -188,7 +188,7 @@ const Feature = () => {
                             <h3>Fact with us<br/><span>My Blog</span></h3>
                         </div>
                     </div>
-                    <ul className="sci">
+                    <ul className="sci"> 
                         <li>
                             <a href='https://kushwahdivyansh2.wixsite.com/website' onClick={show} target="_blank" >preview</a>
                         </li>

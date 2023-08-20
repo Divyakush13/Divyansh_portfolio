@@ -115,4 +115,59 @@
     opacity: 1;
   }
 
+/* Default styles for all screen sizes */
+
+/* Media query for screens between 100px and 700px wide */
+@media only screen and (max-width: 700px) and (min-width: 100px) {
+    .main{
+        /* background-color: red; */
+        width: auto;
+        
+    }
+    .slogan {
+      /* font-size: 18px; */
+      /* width: 90%; */
+      text-align: left;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 10px;
+      width: auto;
+      padding-left: 50px;
+      padding-right: 50px;
+      max-height: max-content;
+
+    }
+  
+    .contectHead {
+      font-size: 22px;
+
+    }
+  
+    .form {
+
+      /* display: none ; */
+      width: 90%;
+      margin-top: 120%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      height: fit-content;
+      /* background-color: blue; */
+    }
+ 
+    .textfield,
+    .massege {
+      padding: 8px;
+    }
+  
+    .sentbtn {
+      height: 30px;
+      font-size: 12px;
+    }
+    
+    .success-message {
+      margin-top: 10px;
+      
+    }
+  }
   

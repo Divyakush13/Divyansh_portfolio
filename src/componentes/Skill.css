@@ -1,6 +1,7 @@
 .skill {
 
-    background-color: #151821;
+    /* background-color: #151821; */
+    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +204,7 @@
 
 }
 
-@media(max-width: 998px) {
+/* @media(max-width: 998px) { }*/
     .aboutme .girl {
         display: none;
     }
@@ -216,11 +217,8 @@
     .anoutmepara p {
         width: 100%;
         max-height: auto;
-        /* height: 500px; */
     
-        /* background-color: #EEC673; */
         display: inline-block;
-        /* text-align: center; */
         position: relative;
        
 
@@ -284,7 +282,7 @@
         
 
     }
-}
+
 
 .scroll-to-top {
     position: fixed;
@@ -306,3 +304,59 @@
     color: #EEC673;
   }
   
+
+  @media only screen and (max-width: 700px) and (min-width: 100px)  {
+    .anoutmepara {
+        background-color: transparent;
+        width: auto;
+    }
+
+    .skill{
+         background-color: transparent;
+         display: flex;
+         justify-content: space-around;
+    }
+    .skillsection{
+        width: 100%;
+      
+
+    }
+    .allskill{
+        /* background-color: blue; */
+        width: 100%;
+    }
+   
+   .aboutme{
+    /* background-color: red; */
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   }
+   .anoutmepara h1{
+    align-self: center;
+   }
+   .anoutmepara p{
+    padding-left: 20px;
+    padding-right: 20px;
+    word-spacing: 1px;
+    align-self: center; 
+    text-align: center;
+   }
+   .anoutmepara img{
+    align-self: center; 
+    /* background-color: red; */
+   }
+
+   .button{
+        display: flex;
+        align-self: center;
+        margin-bottom: 50px;
+        min-width: 250px;
+        max-width: 300px;
+   }
+   .button{
+     /* width: 100%; */
+   }
+  }
