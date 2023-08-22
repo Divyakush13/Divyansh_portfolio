@@ -98,7 +98,6 @@
     /* background-color: aliceblue; */
     display: flex;
     justify-content: space-between;
-    justify-content: space-between;
     background-color: #151821;
 
 
@@ -107,6 +106,8 @@
 .skilltext {
     display: flex;
     background-color: #151821;
+    justify-content: center;
+    width: 100%;
 }
 
 .skilltext h1 {
@@ -127,8 +128,7 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    width: 750px;
-    margin-right: 00px;
+    width: 100% !important;
     background-color: #151821;
 
 }
@@ -202,9 +202,7 @@
 }
 
 /* @media(max-width: 998px) { } */
-    .aboutme .girl {
-        /* display: none; */
-    }
+   
 
     .anoutmepara img {
         margin-top: 20px;
@@ -217,8 +215,7 @@
         display: inline-block;
         position: relative;
         background-size: contain;
-
-        
+        word-spacing: 1px;
     }
 
     .linesec{
@@ -252,4 +249,59 @@
         color: #EEC673;
       }
       
+
+  /* mobile phone  */
+
+  @media only screen and (max-width: 700px) and (min-width: 100px) {
+         .skill{
+            /* background-color: red; */
+         }
+         .aboutme h1,p{
+              align-self: center;
+              text-align: center;
+              padding-left: 20px;
+              padding-right: 20px;
+             
+         }
+         .button ,img{
+            align-self: center;
+            width: 100%;
+            justify-content: space-between;
+         }
+         .girl {
+            display: none;
+         }
+         .anoutmepara {
+            width: fit-content;
+            height: auto;
+         }
+        .skillsection{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            /* background-color: red; */
+            height: fit-content;
+            align-items: center;
+
+            
+        }
+        .skillsection h1{
+            transform: rotate(0deg);
+            margin-top: 10px;
+        }
+         .allskill {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            align-items: center;
+            width: fit-content;
+            /* background-color: red; */
+
+         }
+         .linesec{
+            width: 100%;
+         }
+  }
    

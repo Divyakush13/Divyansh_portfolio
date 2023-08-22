@@ -19,7 +19,11 @@ const Navbar = () => {
 
   }
   const About = () => {
-    window.scrollTo({ top: 690, behavior: 'smooth' })
+    window.scrollTo({ top: 760, behavior: 'smooth' })
+
+  }
+  const Expertise = () => {
+    window.scrollTo({ top: 1500, behavior: 'smooth' })
 
   }
   const Project = () => {
@@ -30,6 +34,7 @@ const Navbar = () => {
     window.scrollTo({ top: 6000, behavior: 'smooth' })
 
   }
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,6 +67,7 @@ const Navbar = () => {
           <ul>
             <li onClick={home}> Home</li>
             <li onClick={About}> About</li>
+            <li onClick={Expertise}> Expertise</li>
             <li onClick={Project}> Project</li>
             <li onClick={conectme}> conect me</li>
             {/* <li><a href=''/> Insta</li> */}

@@ -5,6 +5,9 @@ import Aos from "aos";
 import SwiperCore, { Swiper, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import { useSwipeable } from 'react-swipeable';
+import { Swiper as SwiperComponent } from 'swiper/react';
+
+
 
 const Feature = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -34,8 +37,10 @@ const Feature = () => {
     };
     
     const show = () => {
-        setIsOverlayVisible(true);
-        setIsDivVisible(true);
+        if (!isDivVisible) {
+            setIsOverlayVisible(true);
+            setIsDivVisible(true);
+        }
     };
 
     if (isLoading) {
@@ -52,7 +57,7 @@ const Feature = () => {
             <h1  data-aos="fade-in"  data-aos-anchor-placement="top-center"> Feature Work</h1>
             <div className={isLoading ? 'LoadingSpinner' : 'container'} data-aos="fade-in" data-aos-anchor-placement="top-center">
             {window.innerWidth <= 600 ? (
-                <Swiper
+                <SwiperComponent
             slidesPerView={1}
             navigation
             spaceBetween={20}
@@ -60,7 +65,7 @@ const Feature = () => {
           >
   
             {/* Add more slides as needed */}
-          </Swiper>
+          </SwiperComponent>
           ) : (
             <>
                 <div className="card"  data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -93,9 +98,14 @@ const Feature = () => {
                         </div>
                     </div>
                     <ul className="sci">
-                        <li>
-                            <a href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                        </li>
+                    <li>
+                       <a
+                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
+                         onClick={show}
+                         target="_blank"
+                         >preview
+                       </a>
+                    </li>
                         <li>
                             <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                         </li>
@@ -112,9 +122,14 @@ const Feature = () => {
                         </div>
                     </div>
                     <ul className="sci">
-                        <li>
-                            <a href='' onClick={show}  target="_blank" >preview</a>
-                        </li>
+                    <li>
+                       <a
+                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
+                         onClick={show}
+                         target="_blank"
+                         >preview
+                       </a>
+                    </li>
                         <li>
                             <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                         </li>
@@ -132,9 +147,15 @@ const Feature = () => {
                         </div>
                     </div>
                     <ul className="sci">
-                        <li>
-                            <a href=''  onClick={show}   target="_blank" >preview</a>
-                        </li>
+                    <li>
+                       <a
+                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
+                         onClick={show}
+                         target="_blank"
+                         >preview
+                       </a>
+                    </li>
+
                         <li>
                             <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                         </li>
@@ -151,9 +172,14 @@ const Feature = () => {
                         </div>
                     </div>
                     <ul className="sci">
-                        <li>
-                            <a href='' onClick={show} target="_blank"  >preview</a>
-                        </li>
+                    <li>
+                       <a
+                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
+                         onClick={show}
+                         target="_blank"
+                         >preview
+                       </a>
+                    </li>
                         <li>
                             <a href="https://github.com/Divyakush13/aExpress"  target="_blank" >Buy</a>
                         </li>
@@ -203,8 +229,8 @@ const Feature = () => {
                 {/* ... */}
             </div>
             {isDivVisible && (
-                <div className='alert'>
-                    <h1>not available, sorry</h1>
+                <div className='alert' >
+                    <div className='sad-emoji'>🙁</div>
                     <button className='ok' onClick={() => setIsDivVisible(false)}>Close</button>
                 </div>
             )}

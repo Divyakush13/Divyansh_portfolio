@@ -48,16 +48,17 @@
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
     "prompts": "^2.4.2",
-    "react": "^18.2.0",
+    "react": "^16.8.0 || ^17.0.0",
     "react-app-polyfill": "^3.0.0",
     "react-dev-utils": "^12.0.1",
-    "react-dom": "^18.2.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
     "react-hamburger-icon": "^1.0.2",
     "react-icons": "^4.6.0",
     "react-refresh": "^0.11.0",
     "react-swipeable": "^7.0.1",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
+    "sass": "^1.66.1",
     "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
@@ -81,7 +82,6 @@
     "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",
