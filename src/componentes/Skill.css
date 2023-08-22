@@ -1,7 +1,5 @@
 .skill {
-
-    /* background-color: #151821; */
-    background-color: red;
+    background-color: #151821;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +11,6 @@
     margin-bottom: 100px;
     /* height: 500px; */
     display: flex;
-
     background-color: #151821;
 }
 
@@ -100,7 +97,7 @@
     margin-bottom: 100px;
     /* background-color: aliceblue; */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     justify-content: space-between;
     background-color: #151821;
 
@@ -137,10 +134,10 @@
 }
 
 .linesec {
-    /* width: 50px; */
+    width: 50px;
     height: 30px;
-    /* display: grid;
-    grid-template-columns: auto auto; */
+    display: grid;
+    grid-template-columns: auto auto;
     flex-direction: column;
     /* border: 1px solid red; */
     margin-inline: 30px;
@@ -204,9 +201,9 @@
 
 }
 
-/* @media(max-width: 998px) { }*/
+/* @media(max-width: 998px) { } */
     .aboutme .girl {
-        display: none;
+        /* display: none; */
     }
 
     .anoutmepara img {
@@ -217,146 +214,68 @@
     .anoutmepara p {
         width: 100%;
         max-height: auto;
-    
         display: inline-block;
         position: relative;
-       
-
         background-size: contain;
 
         
     }
 
-    
+    .linesec{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        margin-bottom: 50px;
+        
 
-    .skill {
+    }
+  
+
+    .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #EEC673;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #181C26;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+    .scroll-to-top:hover {
+        background-color: #EEC673;
+        color: #EEC673;
+      }
+      
+      
+    /* .skill {
         width: auto;
         height: max-content;
         margin-right: 0px;
     }
 
-    .aboutme {
-        width: auto;
-        margin-top: 0px;
     
-    }
 
-    .skillsection{
-        width: fit-content;
-        display: flex;
-        height: fit-content;
-        flex-direction: column;
-        /* background-color: #EEC673; */
-        width: 500px;
-        justify-content: center;
-        align-items: center;
-        
-    }
+    
     .skilltext {
 
       justify-content: center;   
-      /* background-color: aliceblue;     */
       margin-bottom: 50px;
       
     }
-    .skilltext h1{
-        transform: rotate(0deg);
-        align-self: center;
-        margin-top: 20px;
-    }
-    .allskill{
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        /* background-color: aliceblue; */
-        
-    }
-    .linesec{
-        width: 70%;
-        display: flex;
-        /* background-color: #EEC673; */
-        justify-content: center;
-        height: fit-content;
-        margin-bottom: 50px;
-        
-
-    }
-
-
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #EEC673;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #181C26;
-    transition: background-color 0.3s, color 0.3s;
-  }
   
-  .scroll-to-top:hover {
-    background-color: #EEC673;
-    color: #EEC673;
-  }
+    
+
+
+
+
+  
+  
   
 
-  @media only screen and (max-width: 700px) and (min-width: 100px)  {
-    .anoutmepara {
-        background-color: transparent;
-        width: auto;
-    }
-
-    .skill{
-         background-color: transparent;
-         display: flex;
-         justify-content: space-around;
-    }
-    .skillsection{
-        width: 100%;
-      
-
-    }
-    .allskill{
-        /* background-color: blue; */
-        width: 100%;
-    }
-   
-   .aboutme{
-    /* background-color: red; */
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-   }
-   .anoutmepara h1{
-    align-self: center;
-   }
-   .anoutmepara p{
-    padding-left: 20px;
-    padding-right: 20px;
-    word-spacing: 1px;
-    align-self: center; 
-    text-align: center;
-   }
-   .anoutmepara img{
-    align-self: center; 
-    /* background-color: red; */
-   }
-
-   .button{
-        display: flex;
-        align-self: center;
-        margin-bottom: 50px;
-        min-width: 250px;
-        max-width: 300px;
-   }
-   .button{
-     /* width: 100%; */
-   }
-  }
+ */
