@@ -10,9 +10,17 @@ import './Header.css'
 const Header = () => {
   return (
     <>
-
+        
       {/* Navbar */}
-      <Navbar />
+      <Navbar>
+      {isOnline ? (
+        <h1>Connected to the Internet</h1>
+      ) : (
+        <div className="error-message">
+          <p>Network is Not Available</p>
+        </div>
+      )} 
+      </Navbar>
       {/* Description */}
       <Description />
       {/* skill */}
