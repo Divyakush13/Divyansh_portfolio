@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './FeturedWork.css'; 
 import "aos/dist/aos.css";
 import Aos from "aos";
-import SwiperCore, { Swiper, Navigation } from 'swiper';
+import SwiperCore, { Swiper, Navigation } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { useSwipeable } from 'react-swipeable';
-import { Swiper as SwiperComponent } from 'swiper/react';
+// import { Swiper as SwiperComponent } from 'swiper/react';
 
 
 
@@ -56,8 +56,8 @@ const Feature = () => {
         <div className="containermain">
             <h1  data-aos="fade-in"  data-aos-anchor-placement="top-center"> Feature Work</h1>
             <div className={isLoading ? 'LoadingSpinner' : 'container'} data-aos="fade-in" data-aos-anchor-placement="top-center">
-            {window.innerWidth <= 600 ? (
-                <SwiperComponent
+            {window.innerWidth <= 100 ? (
+                <Swiper
             slidesPerView={1}
             navigation
             spaceBetween={20}
@@ -65,7 +65,7 @@ const Feature = () => {
           >
   
             {/* Add more slides as needed */}
-          </SwiperComponent>
+          </Swiper>
           ) : (
             <>
                 <div className="card"  data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -230,8 +230,8 @@ const Feature = () => {
             </div>
             {isDivVisible && (
                 <div className='alert' >
-                    <div className='sad-emoji'>🙁</div>
-                    <button className='ok' onClick={() => setIsDivVisible(false)}>Close</button>
+                    <div className='sad-emoji'>Sorry Not Available <br/>🙁</div>
+                    <button className='ok' onClick={() => setIsDivVisible(false)}>Don't worry</button>
                 </div>
             )}
         </div>

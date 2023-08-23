@@ -196,16 +196,28 @@
   width: 50%;
   align-self: center;  
   position: relative;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
 }
 
 .alert button {
   margin-top: 10px;
-  padding: 5px 10px;
   background-color: #EEC673;
-  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: fit-content;
+  padding: 10px 18px;
+  text-align: center; 
+  margin: auto;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #181C26;
+  display: inline-block;
+  /* margin: 30px 0; */
+  border-radius: 3px;
+
 }
 
 /* Define the animation */
@@ -254,6 +266,15 @@
   margin-top: 20px; 
   width: 100%;
   height: auto;
+}
+.container .card .sci li {
+  list-style: none;
+  margin-bottom: 100px;
+  /* transform: translateY(40px); */
+  /* transition: 0.5s; */
+  background-color:#EEC673;
+  opacity: 1;
+  
 }
 
 /* Styles for Swiper slides */
@@ -324,4 +345,6 @@
   max-height: 500px;
   scroll-behavior: smooth;
 }
+
+
 }

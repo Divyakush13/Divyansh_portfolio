@@ -3,3 +3,10 @@
 height: 100%;
 
 }
+
+.error-message {
+    background-color: #ff4136;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
