@@ -31,16 +31,15 @@
 
 // export default Header;
 
-
 import React from 'react';
-import Navbar from "../Navbarfolder/Navbar"
+import Navbar from "../Navbarfolder/Navbar";
 import Description from "../componentes/Description";
-import Skill from './Skill'
-import Expertize from './Expertize'
-import Contect from './Contect'
-import FeturedWork from "../componentes/FeturedWork"
+import Skill from './Skill';
+import Expertize from './Expertize';
+import Contect from './Contect';
+import FeturedWork from "../componentes/FeturedWork";
 import Footer from './Footer';
-import './Header.css'
+import './Header.css';
 
 const Header = ({ isOnline }) => {
   return (
@@ -48,21 +47,16 @@ const Header = ({ isOnline }) => {
       {/* Navbar */}
       <Navbar />
       
-      {/* Conditionally render based on network status */}
-      {isOnline ? (
-        <>
-          {/* Description */}
-          <Description />
-          {/* skill */}
-          <Skill />
-          {/* Expertize */}
-          <Expertize />
-          {/* FeturedWork */}
-          <FeturedWork />
-          <Contect />
-          <Footer />
-        </>
-      ) : (
+      {/* Render the rest of the content */}
+      <Description />
+      <Skill />
+      <Expertize />
+      <FeturedWork />
+      <Contect />
+      <Footer />
+      
+      {/* Conditionally render error message if not online */}
+      {!isOnline && (
         <div className="error-message">
           <p>Network is Not Available</p>
         </div>
