@@ -171,7 +171,30 @@ const Navbar = () => {
       {/* Social Media Icons */}
       <div className='social-media'>
         <ul className='social-media-desktop'>
-          {/* Social media icons */}
+        <li>
+               <a href='https://www.instagram.com/____d_i_v_y_a_n_s_h_____/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D'  target="_blank">
+               <Instagram className='instagram' />
+               </a>
+             </li>
+
+             <li>
+               <a href='https://twitter.com/Divyakush13'  target="_blank">
+                 <Twitter className='tweater' />
+               </a>
+             </li>
+
+             <li>
+               <a href='https://github.com/Divyakush13'  target="_blank">
+                 <GitHub className='tweater' />
+               </a>
+             </li>
+
+             <li>
+               <a href='https://www.facebook.com/divyansh.kushwah.3994'  target="_blank">
+                 <Facebook className='facebook' />
+               </a>
+             </li>
+
         </ul>
         <div className='Hamberger-menu' onClick={toggleMenu}>
           {isMenuOpen ? <AiOutlineClose style={{color:'white' , marginTop:'10px', backgroundcolor:'transparent'}}/> : <GiHamburgerMenu style={{color:'white' , marginTop:'10px',background:'transparent'}}/>}

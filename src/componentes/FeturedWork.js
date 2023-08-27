@@ -139,7 +139,7 @@ const Feature = () => {
                     <ul className="sci">
                     <li>
                        <a
-                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
+                         href={isDivVisible ? null : ''}
                          onClick={show}
                          target="_blank"
                          >preview
