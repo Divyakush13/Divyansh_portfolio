@@ -154,7 +154,7 @@ const Navbar = () => {
     <div className='navbarcont'>
       {/* Logo */}
       <div className='logo'>
-        <h>portfolio</h>
+        <h className='port'>portfolio</h>
       </div>
 
       {/* Navigation Options */}
@@ -174,7 +174,7 @@ const Navbar = () => {
           {/* Social media icons */}
         </ul>
         <div className='Hamberger-menu' onClick={toggleMenu}>
-          {isMenuOpen ? <AiOutlineClose style={{color:'white' , marginTop:'20px', backgroundcolor:'transparent'}}/> : <GiHamburgerMenu style={{color:'white' , marginTop:'20px'}}/>}
+          {isMenuOpen ? <AiOutlineClose style={{color:'white' , marginTop:'10px', backgroundcolor:'transparent'}}/> : <GiHamburgerMenu style={{color:'white' , marginTop:'10px',background:'transparent'}}/>}
         </div>
       </div>
 

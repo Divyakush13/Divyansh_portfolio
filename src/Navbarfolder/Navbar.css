@@ -214,6 +214,7 @@ li:before{
     .logo,
     .social-media ul{
         height: 7rem;
+
     }
    
 
@@ -258,7 +259,23 @@ li:before{
       height: fit-content;
       display: flex;
     }
-    .mobile-menu ul{
-      
+
+    .navbarcont .logo .port{
+        margin-left: 40px;
+        /* background-color: blue; */
+    }
+    .navbarcont{
+        display: flex;
+        /* background-color: red; */
+        align-content: center;
+        align-self: center;
+    }
+    .logo h{
+        /* color: rgb(32, 36, 36); */
+        color: #EEC673;
+        padding: 0px;
+        font-size: 40px;
+        
+        font-family: 'Monoton', cursive; 
     }
   }
