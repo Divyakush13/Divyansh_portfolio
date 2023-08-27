@@ -43,7 +43,7 @@ const skill = () => {
 
                 <div className='skillsection'>
                     <div className='skilltext'data-aos="fade-up"  data-aos-anchor-placement="center-bottom" >
-                        <h1>- My skills</h1>
+                        <h1 className='myskilltxt'>- My skills</h1>
                     </div>
 
                     <div className='allskill'>

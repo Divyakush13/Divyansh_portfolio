@@ -4,6 +4,58 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background-color: red; */
+}
+.skillsection {
+    height: 200px;
+    width: 50%;
+    margin-bottom: 100px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #151821;
+    /* background-color: red; */
+
+}
+
+
+.allskill {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 100% !important;
+    background-color: #151821;
+    /* background-color: blue; */
+    justify-items: center;
+    /* justify-content: center; */
+    align-items: center;    
+    /* height: 250px; */
+}
+
+.skilltext {
+    display: flex;
+    background-color: #151821;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+
+
+.skilltext h1 {
+    color: #EEC673;
+    transform: rotate(-90deg);
+    display: flex;
+    align-self: center;
+    text-align: center;
+    /* width: 150%; */
+    /* word-spacing: 20px; */
+    letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #151821;
+    
 }
 
 .aboutme {
@@ -91,64 +143,23 @@
 .button a:hover{
     cursor: pointer;
 }
-.skillsection {
-    height: 200px;
-    /* width: 50%; */
-    margin-bottom: 100px;
-    /* background-color: aliceblue; */
-    display: flex;
-    justify-content: space-between;
-    background-color: #151821;
 
-
-}
-
-.skilltext {
-    display: flex;
-    background-color: #151821;
-    justify-content: center;
-    width: 100%;
-}
-
-.skilltext h1 {
-    color: #EEC673;
-    transform: rotate(-90deg);
-    display: flex;
-    align-self: center;
-    /* word-spacing: 20px; */
-    letter-spacing: 7px;
-
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #151821;
-
-}
-
-.allskill {
-
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    width: 100% !important;
-    background-color: #151821;
-
-}
 
 .linesec {
-    width: 50px;
+    /* width: 100% !important; */
     height: 30px;
     display: grid;
     grid-template-columns: auto auto;
     flex-direction: column;
     /* border: 1px solid red; */
-    margin-inline: 30px;
+    /* margin-inline: 30px; */
     background-color: #151821;
 
 }
 
 .texts {
-    width: 100px;
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
     background-color: #151821;
 }
@@ -286,9 +297,13 @@
 
             
         }
-        .skillsection h1{
+        .skilltext h1{
             transform: rotate(0deg);
             margin-top: 10px;
+            font-size: 15px;
+            width: 100%;
+            /* background-color: red; */
+            
         }
          .allskill {
             margin-top: 50px;

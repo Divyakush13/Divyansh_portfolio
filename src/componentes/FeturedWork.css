@@ -15,6 +15,9 @@
   font-size: 25px;
 
 }
+.mobile{
+  display: none;
+}
 .container {
   width: 70%;
   /* position: relative; */
@@ -22,7 +25,6 @@
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
- 
   padding: 20px; 
   align-self: center;
 
@@ -275,6 +277,7 @@
   background-color:#EEC673;
   opacity: 1;
   
+  
 }
 
 /* Styles for Swiper slides */
@@ -286,9 +289,15 @@
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   transform-origin: center bottom;
-  transition: transform 0.3s ease-in-out;
-}
+  /* transition: transform 0.3s ease-in-out; */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
+}
+.swiper-slide.active {
+  transform: translateY(-50%) scale(1.1);
+  opacity: 1;
+  z-index: 1;
+}
 /* Styles for Swiper slide images */
 .swiper-slide .imgBx img {
   max-width: 100%;
@@ -344,6 +353,62 @@
   flex-direction: column;
   max-height: 500px;
   scroll-behavior: smooth;
+}
+
+.container .card {
+  background-color: transparent;
+  
+  
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    
+    border-radius: 50px  ;
+    
+}
+
+.container .card .content {
+  position: relative;
+  /* height: 200px; */
+
+}
+.sci{
+  background-color: red;
+  height: fit-content;
+  width: fit-content;
+  
+}
+.sci li{
+  background-color: #EEC673;
+  /* position: absolute; */
+  display: none;
+}
+
+.mobile{
+  display: flex;
+  margin-top: 20px;
+  width: 180px;
+  /* background-color: #EEC673; */
+}
+.mobilebtn{
+  background-color: #EEC673;
+  width: fit-content;
+  text-align: center;
+  height: 30px;
+  width: 60px;
+  padding: 10px;
+  text-align: center; 
+  margin: auto;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #181C26;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.container .card:hover .mobile {
+  transform: translateY(-10px);
+  transition: transform 330ms ease-in-out;
 }
 
 

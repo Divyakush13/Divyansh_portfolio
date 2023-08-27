@@ -79,19 +79,20 @@
   @media only screen and (max-width: 700px) and (min-width: 100px) {
     .Footer{
       /* background-color: red; */
+      height: 510px;
     }
     .detailbox{
       position: absolute;
       display: flex;
       align-content: center;
       background-color: blue;
-      margin-top: 60%;
+      margin-top: 70%;
     }
     .iconfooter{
       
       align-self: center;
       /* background-color: blue; */
-      margin-top: 110%;
+      margin-top: 120%;
       justify-self: center;
       
     }

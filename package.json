@@ -8,8 +8,10 @@
     "@emotion/styled": "^11.11.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@mui/material": "^5.14.5",
-    "@mui/styled-engine-sc": "^5.12.0",
+    "@material-ui/styles": "^4.11.5",
+    "@mui/icons-material": "^5.14.6",
+    "@mui/material": "^5.14.6",
+    "@mui/styled-engine-sc": "^5.14.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -39,6 +41,7 @@
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
+    "kleur": "^4.1.5",
     "mini-css-extract-plugin": "^2.4.5",
     "nodemailer": "^6.9.4",
     "npm": "^9.8.1",
@@ -51,7 +54,7 @@
     "react": "^16.8.0 || ^17.0.0",
     "react-app-polyfill": "^3.0.0",
     "react-dev-utils": "^12.0.1",
-    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.2",
     "react-hamburger-icon": "^1.0.2",
     "react-icons": "^4.6.0",
     "react-refresh": "^0.11.0",
@@ -79,8 +82,7 @@
     "test": "node scripts/test.js"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react": "^16.8.0 || ^17.0.0"
   },
   "eslintConfig": {
     "extends": [
@@ -155,5 +157,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7"
   }
 }

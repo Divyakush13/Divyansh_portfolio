@@ -22,7 +22,7 @@ const App = () => {
       setIsOnline(navigator.onLine);
     };
 
-    window.addEventListener('online', handleOnlineStatus);
+    // window.addEventListener('online', handleOnlineStatus);
     window.addEventListener('offline', handleOnlineStatus);
 
     return () => {

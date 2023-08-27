@@ -39,7 +39,7 @@ const Feature = () => {
     const show = () => {
         if (!isDivVisible) {
             setIsOverlayVisible(true);
-            setIsDivVisible(true);
+            // setIsDivVisible(true);
         }
     };
 
@@ -86,6 +86,13 @@ const Feature = () => {
                             <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                         </li>
                     </ul>
+
+
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
+
                 </div>
 
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -99,17 +106,25 @@ const Feature = () => {
                     </div>
                     <ul className="sci">
                     <li>
-                       <a
-                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
+                       {/* <a
+                         href={isDivVisible ? null : ''}
                          onClick={show}
                          target="_blank"
                          >preview
-                       </a>
+                       </a> */}
+                       <a href='https://the-stream-frontend.vercel.app/' onClick={show} target="_blank">preview</a>
+
                     </li>
                         <li>
                             <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                         </li>
                     </ul>
+
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
+
                 </div>
 
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -134,6 +149,10 @@ const Feature = () => {
                             <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                         </li>
                     </ul>
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
                 </div>
 
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -160,6 +179,10 @@ const Feature = () => {
                             <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                         </li>
                     </ul>
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
                 </div>
 
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -184,6 +207,10 @@ const Feature = () => {
                             <a href="https://github.com/Divyakush13/aExpress"  target="_blank" >Buy</a>
                         </li>
                     </ul>
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
                 </div>
 
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -203,6 +230,10 @@ const Feature = () => {
                             <a href="">Buy</a>
                         </li>
                     </ul>
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
                 </div>
   
                 <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
@@ -222,6 +253,10 @@ const Feature = () => {
                             <a href="">Buy</a>
                         </li>
                     </ul>
+                    <div className='mobile'>
+                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    </div>
                 </div>
 
                 </>
