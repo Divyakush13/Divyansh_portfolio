@@ -264,9 +264,7 @@
   /* mobile phone  */
 
   @media only screen and (max-width: 700px) and (min-width: 100px) {
-         .skill{
-            /* background-color: red; */
-         }
+       
          .aboutme h1,p{
               align-self: center;
               text-align: center;

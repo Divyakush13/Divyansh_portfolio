@@ -76,11 +76,7 @@ span {
   background-color: transparent;
   
 }
-.shap{
-  /* filter: grayscale(100%); */
-  /* background:red; */
-  /* border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% ; */
-}
+
 .image:hover .shap{ 
    bottom: 40px;
    /* background-color: red; */
