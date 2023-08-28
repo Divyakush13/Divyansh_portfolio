@@ -16,6 +16,7 @@
   font-size: 50px;
   width: fit-content;
   /* color: #212121; */
+  /* text-align: center; */
   color: aliceblue;
   margin-bottom: 20px;
 }
@@ -25,7 +26,8 @@
   font-family: serif;
   /* color: #212121; */
   width: fit-content;
-
+  /* background-color: red; */
+  justify-content: center;
   color: #fff;
 }
 

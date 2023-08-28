@@ -207,8 +207,9 @@ const Navbar = () => {
           <ul>
             <li onClick={() => scrollToSection(0)}>Home</li>
             <li onClick={() => scrollToSection(760)}>About</li>
-            <li onClick={() => scrollToSection(1950)}>Project</li>
-            <li onClick={() => scrollToSection(6000)}>Connect Me</li>
+            <li onClick={() => scrollToSection(1300)}>Expertise</li>
+            <li onClick={() => scrollToSection(2500)}>Project</li>
+            <li onClick={() => scrollToSection(3000)}>Connect Me</li>
           </ul>
         </div>
       )}

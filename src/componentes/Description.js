@@ -18,7 +18,7 @@ const Description = () => {
           <div className='detail'>
              <h1 data-aos="fade-in"  data-aos-anchor-placement="center-bottom">I'm Divyansh <span data-aos="fade-in"  data-aos-anchor-placement="center-bottom">Kushwaha</span></h1>
              <p  data-aos="fade-in"  data-aos-anchor-placement="center-bottom" >This is my personal portfolio   
-             <br/>&nbsp; Detail about meand my experiences</p>
+             <br/>&nbsp;Detail about meand my experiences</p>
              <a className="download" href='Resume.pdf' download='Resume.pdf' onClick={change}>DOWNLOAD CV</a>
           </div>
           <div className='image'>

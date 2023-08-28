@@ -13,6 +13,7 @@ const Feature = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [isDivVisible, setIsDivVisible] = useState(false);
     const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+    const [activeCardIndex, setActiveCardIndex] = useState(null); // Track the active card's index
 
     const handleSwipe = (dir) => {
         // Handle swipe direction (left or right)
@@ -35,12 +36,11 @@ const Feature = () => {
             setIsLoading(false);
         }, 2000);
     };
+  
     
-    const show = () => {
-        if (!isDivVisible) {
-            setIsOverlayVisible(true);
-            // setIsDivVisible(true);
-        }
+    const show = (previewLink) => {
+        setIsOverlayVisible(true);
+        setIsDivVisible(previewLink !== 'https://the-stream-frontend.vercel.app/'); // Hide the alert if preview link is available
     };
 
     if (isLoading) {
@@ -68,200 +68,252 @@ const Feature = () => {
           </Swiper>
           ) : (
             <>
-                <div className="card"  data-aos="flip-left"  data-aos-anchor-placement="top-center">
+            <div className="card"  data-aos="flip-left"  data-aos-anchor-placement="top-center">
                 
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://cdn.dribbble.com/users/2422996/screenshots/11156751/media/9d1b1dfe183c843c271b71427e8e91cd.gif" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>The Stream<br/><span>An OTT platform</span></h3>
-                        </div>
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://cdn.dribbble.com/users/2422996/screenshots/11156751/media/9d1b1dfe183c843c271b71427e8e91cd.gif" alt="src\Images\girl.png" />
                     </div>
-                    <ul className="sci">
-                        <li>
-                            <a className="preview" href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                        </li>
-                    </ul>
-
-
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    <div className="contentBx">
+                        <h3>The Stream<br/><span>An OTT platform</span></h3>
                     </div>
-
                 </div>
-
-                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://cdn.dribbble.com/users/43602/screenshots/4289148/food-app-animation.gif" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>Foodies<br/><span>Grab Delisious</span></h3>
-                        </div>
-                    </div>
-                    <ul className="sci">
+                <ul className="sci">
                     <li>
-                       {/* <a
-                         href={isDivVisible ? null : ''}
-                         onClick={show}
-                         target="_blank"
-                         >preview
-                       </a> */}
-                       <a href='https://the-stream-frontend.vercel.app/' onClick={show} target="_blank">preview</a>
-
+                        {/* <a className="preview" href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                        <a
+                          href={'https://the-stream-frontend.vercel.app/'}
+                          target="_blank"
+                          onClick={() => show('https://the-stream-frontend.vercel.app/')}>preview
+                        </a>
                     </li>
-                        <li>
-                            <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                        </li>
-                    </ul>
-
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                    </div>
-
-                </div>
-
-                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://i.pinimg.com/originals/e3/dc/a1/e3dca1d9437a51d70bc09a6e8f486b75.gif" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>Instady<br/><span>A Social App</span></h3>
-                        </div>
-                    </div>
-                    <ul className="sci">
                     <li>
-                       <a
-                         href={isDivVisible ? null : ''}
-                         onClick={show}
-                         target="_blank"
-                         >preview
-                       </a>
+                        <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                     </li>
-                        <li>
-                            <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
-                        </li>
-                    </ul>
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                    </div>
+                </ul>
+
+
+                <div className='mobile'>
+                        <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
+                        <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                 </div>
 
-                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://devtechnosys.com/insights/wp-content/uploads/2021/02/tinder-like-app.gif
-" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>Discover<br/><span>A Dating App</span></h3>
-                        </div>
+            </div>
+
+            <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://cdn.dribbble.com/users/43602/screenshots/4289148/food-app-animation.gif" alt="src\Images\girl.png" />
                     </div>
-                    <ul className="sci">
+                    <div className="contentBx">
+                        <h3>Foodies<br/><span>Grab Delisious</span></h3>
+                    </div>
+                </div>
+                <ul className="sci">
+                <li>
+                <a
+                    target="_blank"
+                    onClick={() => show('')}>preview
+                </a>
+                </li>
                     <li>
-                       <a
-                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
-                         onClick={show}
-                         target="_blank"
-                         >preview
-                       </a>
+                        <a href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                     </li>
+                </ul>
 
-                        <li>
-                            <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
-                        </li>
-                    </ul>
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                    </div>
+                <div className='mobile'>
+                        {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                        <a
+                          className='mobilebtn'
+                          target="_blank"
+                          onClick={() => show('')}>preview
+                        </a> 
+                        <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                 </div>
 
-                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://www.cleveroad.com/images/article-previews/grocery-gif-3.gif" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>Kharido<br/><span>A Grocery Store</span></h3>
-                        </div>
+            </div>
+
+            <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://i.pinimg.com/originals/e3/dc/a1/e3dca1d9437a51d70bc09a6e8f486b75.gif" alt="src\Images\girl.png" />
                     </div>
-                    <ul className="sci">
+                    <div className="contentBx">
+                        <h3>Instady<br/><span>A Social App</span></h3>
+                    </div>
+                </div>
+                <ul className="sci">
+                <li>
+                <a
+                    target="_blank"
+                    onClick={() => show('')}>preview
+                    </a>
+                </li>
                     <li>
-                       <a
-                         href={isDivVisible ? null : 'https://the-stream-frontend.vercel.app/'}
-                         onClick={show}
-                         target="_blank"
-                         >preview
-                       </a>
+                        <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
                     </li>
-                        <li>
-                            <a href="https://github.com/Divyakush13/aExpress"  target="_blank" >Buy</a>
-                        </li>
-                    </ul>
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                    </div>
+                </ul>
+                <div className='mobile'>
+                        {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                        
+                        <a
+                          className='mobilebtn'
+                          target="_blank"
+                          onClick={() => show('')}>preview
+                        </a>
+                        <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
                 </div>
+            </div>
 
-                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://cdn.dribbble.com/users/209662/screenshots/3272140/jewellery_e-commerce_app_concept_by_tubik.gif" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>Dk Jewellers<br/><span>Jewellery Shop</span></h3>
-                        </div>
+            <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://devtechnosys.com/insights/wp-content/uploads/2021/02/tinder-like-app.gif" alt="src\Images\girl.png" />
                     </div>
-                    <ul className="sci">
-                        <li>
-                            <a href='https://divyanshkushwahin.wordpress.com/' onClick={show} target="_blank" >preview</a>
-                        </li>
-                        <li>
-                            <a href="">Buy</a>
-                        </li>
-                    </ul>
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                    <div className="contentBx">
+                        <h3>Discover<br/><span>A Dating App</span></h3>
                     </div>
                 </div>
-  
-                <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
-                    <div className="content">
-                        <div className="imgBx">
-                            <img src="https://static.wixstatic.com/media/eb9dc8_8b6244700fed475093a79029782b060d~mv2.gif" alt="src\Images\girl.png" />
-                        </div>
-                        <div className="contentBx">
-                            <h3>Fact with us<br/><span>My Blog</span></h3>
-                        </div>
-                    </div>
-                    <ul className="sci"> 
-                        <li>
-                            <a href='https://kushwahdivyansh2.wixsite.com/website' onClick={show} target="_blank" >preview</a>
-                        </li>
-                        <li>
-                            <a href="">Buy</a>
-                        </li>
-                    </ul>
-                    <div className='mobile'>
-                            <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a>
-                            <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
-                    </div>
-                </div>
+                <ul className="sci">
+                <li>
+                <a
+                  target="_blank"
+                  onClick={() => show('')}>preview
+                </a>
+                </li>
 
-                </>
+                    <li>
+                        <a href="https://github.com/Divyakush13/Socialmeadia"  target="_blank" >Buy</a>
+                    </li>
+                </ul>
+                <div className='mobile'>
+                        {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                        <a
+                        className='mobilebtn'
+                          target="_blank"
+                          onClick={() => show('')}>preview
+                        </a>    
+                        <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                </div>
+            </div>
+
+            <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://www.cleveroad.com/images/article-previews/grocery-gif-3.gif" alt="src\Images\girl.png" />
+                    </div>
+                    <div className="contentBx">
+                        <h3>Kharido<br/><span>A Grocery Store</span></h3>
+                    </div>
+                </div>
+                <ul className="sci">
+                <li>
+                <a
+                          target="_blank"
+                          onClick={() => show('')}>preview
+                        </a>
+                </li>
+                    <li>
+                        <a href="https://github.com/Divyakush13/aExpress"  target="_blank" >Buy</a>
+                    </li>
+                </ul>
+                <div className='mobile'>
+                        {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                        <a
+                        className='mobilebtn'
+                          target="_blank"
+                          onClick={() => show('')}>preview
+                        </a>
+                        <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a>
+                </div>
+            </div>
+
+            <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://cdn.dribbble.com/users/209662/screenshots/3272140/jewellery_e-commerce_app_concept_by_tubik.gif" alt="src\Images\girl.png" />
+                    </div>
+                    <div className="contentBx">
+                        <h3>Dk Jewellers<br/><span>Jewellery Shop</span></h3>
+                    </div>
+                </div>
+                <ul className="sci">
+                    <li>
+                        <a
+                          href={'https://divyanshkushwahin.wordpress.com/'}
+                          target="_blank"
+                          onClick={() => show('https://divyanshkushwahin.wordpress.com/')}>preview
+                        </a>
+                        {/* <a href='https://divyanshkushwahin.wordpress.com/' onClick={show} target="_blank" >preview</a> */}
+                    </li>
+                    <li>
+                    <a
+                      target="_blank"
+                      onClick={() => show('')}>Buy
+                    </a>
+                    </li>
+                </ul>
+                <div className='mobile'>
+                        {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                    <a
+                      className='mobilebtn' 
+                      href={'https://divyanshkushwahin.wordpress.com/'}
+                      target="_blank"
+                      onClick={() => show('href://divyanshkushwahin.wordpress.com/</li>')}>preview
+                    </a>    
+                    <a
+                    className='mobilebtn'
+                      target="_blank"
+                      onClick={() => show('')}>Buy
+                    </a>
+                        {/* <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a> */}
+                </div>
+            </div>
+
+            <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
+                <div className="content">
+                    <div className="imgBx">
+                        <img src="https://static.wixstatic.com/media/eb9dc8_8b6244700fed475093a79029782b060d~mv2.gif" alt="src\Images\girl.png" />
+                    </div>
+                    <div className="contentBx">
+                        <h3>Fact with us<br/><span>My Blog</span></h3>
+                    </div>
+                </div>
+                <ul className="sci"> 
+                    <li>
+                    <a
+                      href={'https://kushwahdivyansh2.wixsite.com/website'}
+                      target="_blank"
+                      onClick={() => show('https://kushwahdivyansh2.wixsite.com/website')}>preview
+                    </a>    
+                        {/* <a href='https://kushwahdivyansh2.wixsite.com/website' onClick={show} target="_blank" >preview</a> */}
+                    </li>
+                    <li>
+                    <a
+                      target="_blank"
+                      onClick={() => show('')}>preview
+                    </a>  
+                    </li>
+                </ul>
+                <div className='mobile'>
+                        {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                    <a
+                      className='mobilebtn' 
+                      href={'https://kushwahdivyansh2.wixsite.com/website'}
+                      target="_blank"
+                      onClick={() => show('https://kushwahdivyansh2.wixsite.com/website')}>preview
+                    </a>  
+                    <a
+                      className='mobilebtn'
+                      target="_blank"
+                      onClick={() => show('')}>
+                    </a>   
+                        {/* <a className='mobilebtn' href="https://github.com/Divyakush13/Foodies"  target="_blank" >Buy</a> */}
+                </div>
+            </div>
+
+            </>
           )}
-                {/* ... */}
             </div>
             {isDivVisible && (
                 <div className='alert' >

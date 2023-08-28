@@ -23,33 +23,33 @@ const Expertize = () => {
       <div className='all' >
           <div className='Exdetail'  data-aos="fade-right">
             {/* <img src={ui} alt='image' /> */}
-            <CloudUploadIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px'}}/>
+            <CloudUploadIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px', background:'transparent'}}/>
             <h2>web Hosting</h2>
           </div>
 
           <div className='Exdetail'  data-aos="fade-left">
             {/* <img src={content} alt='image' /> */}
-            <DesignServicesIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px'}}/>
+            <DesignServicesIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px',background:'transparent'}}/>
             <h2>ui/ux Design</h2>
             {/* <p>i am ui ux designer</p> */}
           </div>
 
           <div className='Exdetail'  data-aos="fade-right">
             {/* <img src='' alt='image' /> */}
-            <WebIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px'}}/>
+            <WebIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px',background:'transparent'}}/>
             <h2>web Design</h2>
             {/* <p>i am ui ux designer</p> */}
           </div>
           <div className='Exdetail'  data-aos="fade-left">
             {/* <img src='' alt='image' /> */}
-            <FilterDramaIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px'}}/>
+            <FilterDramaIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px',background:'transparent'}}/>
 
             <h2>Backend</h2>
             {/* <p>i am ui ux designer</p> */}
           </div>
            <div className='Exdetail'  data-aos="fade-right">
             {/* <img src='' alt='image' /> */}
-            <TravelExploreIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px'}}/>
+            <TravelExploreIcon style={{color:'#EEC673' , height:'40px', width:'40px', marginBottom:'15px',background:'transparent'}}/>
             
             <h2>SEO</h2>
             {/* <p>i am ui ux designer</p> */}

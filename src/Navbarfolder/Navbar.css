@@ -259,6 +259,13 @@ li:before{
       height: fit-content;
       display: flex;
     }
+    .mobile-menu ul li{
+        /* background-color: red; */
+        font-weight: bold;
+        /* font-size: 15px !important; */
+        margin: 10px;
+        width: auto;
+    }
 
     .navbarcont .logo .port{
         margin-left: 40px;
@@ -275,7 +282,6 @@ li:before{
         color: #EEC673;
         padding: 0px;
         font-size: 40px;
-        
         font-family: 'Monoton', cursive; 
     }
   }
