@@ -203,7 +203,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {window.innerWidth <= 768 && isMenuOpen && (
-        <div className='mobile-menu'>
+        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li onClick={() => scrollToSection(0)}>Home</li>
             <li onClick={() => scrollToSection(760)}>About</li>
