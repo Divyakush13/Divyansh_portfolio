@@ -1,39 +1,7 @@
-// import React from 'react';
-// import Navbar from "../Navbarfolder/Navbar"
-// import Description from "../componentes/Description";
-// import Skill from './Skill'
-// import Expertize from './Expertize'
-// import Contect from './Contect'
-// import FeturedWork from "../componentes/FeturedWork"
-// import Footer from './Footer';
-// import './Header.css'
-// const Header = () => {
-//   return (
-//     <>
-        
-//       {/* Navbar */}
-//       <Navbar />
-//       {/* Description */}
-//       <Description />
-//       {/* skill */}
-//       <Skill />
-//       {/* Expertize */}
-//       <Expertize />
-
-//       {/* FeturedWork */}
-//       <FeturedWork />
-
-//       <Contect />
-//       <Footer/>
-//     </>
-//   );
-// };
-
-// export default Header;
-
 import React from 'react';
 import Navbar from "../Navbarfolder/Navbar";
 import Description from "../componentes/Description";
+import Metromonial from "../componentes/Metromonial"
 import Skill from './Skill';
 import Expertize from './Expertize';
 import Contect from './Contect';
@@ -52,6 +20,7 @@ const Header = ({ isOnline }) => {
       <Skill />
       <Expertize />
       <FeturedWork />
+      {/* <Metromonial/> */}
       <Contect />
       <Footer />
       
