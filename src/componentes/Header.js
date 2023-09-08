@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../Navbarfolder/Navbar";
 import Description from "../componentes/Description";
-import Metromonial from "../componentes/Metromonial"
+import Testomonial from "./Testomonial"
 import Skill from './Skill';
 import Expertize from './Expertize';
 import Contect from './Contect';
@@ -20,7 +20,7 @@ const Header = ({ isOnline }) => {
       <Skill />
       <Expertize />
       <FeturedWork />
-      {/* <Metromonial/> */}
+      {/* <Testomonial/> */}
       <Contect />
       <Footer />
       

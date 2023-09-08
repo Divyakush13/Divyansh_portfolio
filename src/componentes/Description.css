@@ -88,6 +88,38 @@ span {
 
 }
 
+
+.donate-button {
+  position: fixed;
+  top: 50%;
+  right: -40px; /* Adjust the right distance as needed */
+  transform: translateY(-50%);
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.donate-button h1 {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transform: rotate(90deg);
+  background-color: #EEC673; /* Adjust the color as needed */
+  color: #181C26;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.donate-button h1:hover {
+  background-color: #cc3700; /* Adjust the hover color as needed */
+}
+
+.string .buttonType{
+   size: 1000px;
+}
+
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
   .image {
      display: none;

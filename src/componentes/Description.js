@@ -4,6 +4,8 @@ import girl from "../Images/girl.png"
 import shap from "../Images/s.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
+import GooglePayButton from "@google-pay/button-react"
+
 
 const Description = () => {
   const change = () => {
@@ -19,8 +21,8 @@ const Description = () => {
           <div className='detail'>
              <h1 data-aos="fade-in"  data-aos-anchor-placement="center-bottom">I'm Divyansh <span data-aos="fade-in"  data-aos-anchor-placement="center-bottom">Kushwaha</span></h1>
              <p  data-aos="fade-in"  data-aos-anchor-placement="center-bottom" >This is my personal portfolio   
-             <br/>&nbsp;Detail about meand my experiences</p>
-             <a className="download" href="/resume.pdf" download="resume.pdf" onClick={change}>DOWNLOAD CV</a>
+             <br/>&nbsp;Detail about me and my experiences</p>
+             <a className="download" href="/Divyanshresume.pdf" download="Divyanshresume.pdf" onClick={change}>DOWNLOAD CV</a>
           </div>
           <div className='image'>
                 <img className='shap' src={shap}/>
@@ -28,7 +30,12 @@ const Description = () => {
             
           </div>
 
-
+          {/* <div className="donate-button">
+             <h1 className='donate'
+    
+             >Donate</h1>
+           
+          </div> */}
         </>
         
     );
