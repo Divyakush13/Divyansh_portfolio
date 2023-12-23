@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import GooglePayButton from "@google-pay/button-react"
 
 
+
 const Description = () => {
   const change = () => {
     const downloadLink = document.querySelector('.download');
@@ -30,12 +31,12 @@ const Description = () => {
             
           </div>
 
-          {/* <div className="donate-button">
+          <div className="donate-button">
              <h1 className='donate'
-    
+              
              >Donate</h1>
            
-          </div> */}
+          </div>
         </>
         
     );

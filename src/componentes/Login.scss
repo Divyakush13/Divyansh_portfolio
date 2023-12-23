@@ -1,0 +1,42 @@
+.auth{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: mistyrose;
+    flex-direction: column !important;
+    // background-color: red;
+    width: auto;
+    > form{
+        height: 300px;
+        justify-content: space-between;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        // background-color: blue;
+        align-items: center;
+        min-width: auto;
+         
+        >button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            color: black;
+            font-size: 14px;
+            background-color: transparent;
+        }
+        >button:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+          >input{
+            padding: 0px 10px 0px 20px;
+            height: 50px;
+            width: 400px;
+            max-width: 500px;
+            border-radius: 20px;
+            background-color: transparent;
+          
+        }
+    }
+}

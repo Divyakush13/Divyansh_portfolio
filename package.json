@@ -1,8 +1,11 @@
 {
   "name": "mycv",
+  "proxy": "http://localhost:5000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    
+    "@auth0/auth0-react": "^2.2.1",
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -19,6 +22,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
+    "api": "^6.1.1",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -36,6 +40,7 @@
     "eslint-webpack-plugin": "^3.1.1",
     "express": "^4.18.2",
     "file-loader": "^6.2.0",
+    "firebase": "^10.4.0",
     "fs-extra": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
@@ -44,6 +49,7 @@
     "jest-watch-typeahead": "^1.0.0",
     "kleur": "^4.1.5",
     "mini-css-extract-plugin": "^2.4.5",
+    "mongoose": "^7.5.3",
     "nodemailer": "^6.9.4",
     "npm": "^9.8.1",
     "postcss": "^8.4.4",
@@ -72,7 +78,6 @@
     "style-loader": "^3.3.1",
     "styled-components": "^5.3.11",
     "swiper": "^9.4.1",
-    "tailwindcss": "^3.0.2",
     "terser-webpack-plugin": "^5.2.5",
     "web-vitals": "^2.1.4",
     "webpack": "^5.64.4",
@@ -159,11 +164,16 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app" 
     ]
   },
   "devDependencies": {
     "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7"
-  }
+    "@types/react-dom": "^18.2.7",
+    "tailwindcss": "^3.3.3"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

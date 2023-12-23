@@ -100,6 +100,54 @@ const Feature = () => {
 
             </div>
 
+<div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
+  <div className="content">
+    <div className="imgBx">
+      <img
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d826d7c8-ed2e-4c5b-a53a-639f8ed71b07/da2h0ba-4f905a80-3438-48c6-957f-3ef873f7e7f4.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q4MjZkN2M4LWVkMmUtNGM1Yi1hNTNhLTYzOWY4ZWQ3MWIwN1wvZGEyaDBiYS00ZjkwNWE4MC0zNDM4LTQ4YzYtOTU3Zi0zZWY4NzNmN2U3ZjQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QRS0ZF08tezprVUzXqhNEH0gtzcfJgDS4rEPayaYA_A"
+        alt="src\Images\girl.png"
+      />
+    </div>
+    <div className="contentBx">
+      <h3>
+        The Orak
+        <br />
+        <span>AI Voice Assistance</span>
+      </h3>
+    </div>
+  </div>
+  <ul className="sci">
+    <li>
+      <a
+        href={''}
+        target="_blank"
+        onClick={(e) => {
+          e.preventDefault(); 
+          if (e.currentTarget.href.trim() !== '') {
+            show('');
+          }
+        }}
+      >
+        preview
+      </a>
+    </li>
+    <li>
+      <a href="" target="_blank">
+        Buy
+      </a>
+    </li>
+  </ul>
+
+  <div className="mobile">
+    <a className="mobilebtn" href="" onClick={show} target="_blank">
+      preview
+    </a>
+    <a className="mobilebtn" href="" target="_blank">
+      Buy
+    </a>
+  </div>
+</div>;
+
             <div className="card" data-aos="flip-left"  data-aos-anchor-placement="top-center">
                 <div className="content">
                     <div className="imgBx">
