@@ -139,9 +139,16 @@
     display: inline-block;
     /* margin: 30px 0; */
     border-radius: 3px;
+    
 }
 .button a:hover{
     cursor: pointer;
+}
+
+.girl {
+    background: linear-gradient(to right, hsl(40, 81%, 65%), #ffd75d); 
+    border-radius: 49% 51% 0% 100% / 100% 100% 0% 0%;
+    
 }
 
 

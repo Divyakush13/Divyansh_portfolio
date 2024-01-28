@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import  './Description.css';
-import girl from "../Images/girl.png"
+import girl from "../Images/sit.png"
 import shap from "../Images/s.png"
 import Aos from "aos";
 import "aos/dist/aos.css";

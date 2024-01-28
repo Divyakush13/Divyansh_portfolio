@@ -1,6 +1,6 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
-import girl from "../Images/girl.png"
+import girl from "../Images/boy.png"
 import signature from '../Images/signature.png'
 import './Skill.css';
 

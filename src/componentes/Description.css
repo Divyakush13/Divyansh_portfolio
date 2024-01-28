@@ -59,7 +59,7 @@ span {
 }
 .image {
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 85%;
   bottom: 0;
   right: 100px;
@@ -76,8 +76,16 @@ span {
   transform: translateX(-50%);
   transition: bottom 1s, left 1s;
   background-color: transparent;
+  /* background-color: red; */
+  border-radius: 45% 55% 39% 61% / 94% 88% 12% 6% ;
   
 }
+
+
+
+
+
+
 
 .image:hover .shap{ 
    bottom: 40px;
@@ -85,6 +93,7 @@ span {
 
 }.image:hover .girl{ 
    left: 45%;
+   /* background-color: red; */
 
 }
 
