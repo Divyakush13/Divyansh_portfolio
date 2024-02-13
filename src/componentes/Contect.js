@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import "./Contect.css";
 const Contect = () => {
+
+  const [slogen, useSlogen] = useState(['Just say Hello!'])
+
+  
+
   const [isSuccessVisible, setIsSuccessVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -87,7 +92,7 @@ const Contect = () => {
         )}
 
         <h1 className='slogan'>
-          Let's make something new, different, and more meaningful. <span>Just say Hello!</span>
+          Let's make something new, different, and more meaningful. <span>{slogen}</span>
         </h1>
       </div>
     </>
