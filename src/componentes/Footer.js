@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import { Facebook, GitHub, Instagram, LinkedIn, Twitter } from '@material-ui/icons';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaArrowCircleUp } from 'react-icons/fa';
+import Website from '@mui/icons-material/Language';
+
 
 const Footer = () => {
     const [showScrollButton, setShowScrollButton] = useState(false);
@@ -58,6 +60,10 @@ const Footer = () => {
 
                     <a href='https://github.com/Divyakush13'  target="_blank">
                         <GitHub className='tweater' />
+                    </a>
+
+                    <a href='https://kushwahdivyansh2.wixsite.com/gatiman'  target="_blank">
+                        <Website className='tweater' />
                     </a>
 
                 </div>
