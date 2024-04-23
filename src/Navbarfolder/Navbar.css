@@ -100,6 +100,7 @@ li:before{
     transform-origin: left;
     text-decoration: underline;
     transition: .05s;
+    
 }
 .social-media{
     grid-column: 4/5;
@@ -108,8 +109,9 @@ li:before{
 .social-media ul{
     height: 10rem;
     display: grid;
-    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-columns: 3fr repeat(4, 1fr);
     align-items: center !important;
+
 }
 .social-media ul li{
     text-align: right;

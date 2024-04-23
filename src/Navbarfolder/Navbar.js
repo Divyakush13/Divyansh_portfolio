@@ -132,6 +132,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Navbarfolder/Navbar.css';
 import { Facebook, Instagram, Twitter, GitHub } from '@material-ui/icons';
+import Website from '@mui/icons-material/Language';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -192,6 +193,12 @@ const Navbar = () => {
              <li>
                <a href='https://www.facebook.com/divyansh.kushwah.3994'  target="_blank">
                  <Facebook className='facebook' />
+               </a>
+             </li>
+
+             <li>
+               <a href='https://kushwahdivyansh2.wixsite.com/gatiman'  target="_blank">
+                 <Website className='facebook' />
                </a>
              </li>
 
