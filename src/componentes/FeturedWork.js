@@ -68,6 +68,43 @@ const Feature = () => {
           </Swiper>
         ) : (
           <>
+
+            <div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
+              <div className="content">
+                <div className="imgBx">
+                  <img src="https://media3.giphy.com/media/7x3PHPSMXSONHFuOK4/200w.gif?cid=6c09b952zj1k7ac5wvuwt1ykckswpecj9c1tpkanvanel1y2&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="src\Images\girl.png" />
+                </div>
+                <div className="contentBx">
+                  <h3>AI Assistant<br /><span>Doc reader with <br></br>voice command </span></h3>
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <a
+                    href="https://voiceassistant-two.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Preview
+                  </a>
+
+                </li>
+                <li>
+                  <a href="https://wa.me/916264315576" target="_blank" >Buy</a>
+                </li>
+              </ul>
+
+              <div className='mobile'>
+                {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
+                <a
+                  className='mobilebtn'
+                  target="_blank"
+                  onClick={() => show('')}>preview
+                </a>
+                <a className='mobilebtn' href="https://github.com/Divyakush13/voice-assistant" target="_blank" >Buy</a>
+              </div>
+
+            </div>
             <div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
 
               <div className="content">
@@ -148,43 +185,6 @@ const Feature = () => {
               </div>
             </div>;
 
-            <div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
-              <div className="content">
-                <div className="imgBx">
-                  <img src="https://media3.giphy.com/media/7x3PHPSMXSONHFuOK4/200w.gif?cid=6c09b952zj1k7ac5wvuwt1ykckswpecj9c1tpkanvanel1y2&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="src\Images\girl.png" />
-                </div>
-                <div className="contentBx">
-                  <h3>AI Assistant<br /><span>Doc reader with <br></br>voice command </span></h3>
-                </div>
-              </div>
-              <ul className="sci">
-                <li>
-                  <a
-                    href="https://voiceassistant-two.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Preview
-                  </a>
-
-                </li>
-                <li>
-                  <a href="https://github.com/Divyakush13/voice-assistant" target="_blank" >Buy</a>
-                </li>
-              </ul>
-
-              <div className='mobile'>
-                {/* <a className='mobilebtn' href='https://the-stream-frontend.vercel.app/' onClick={show}  target="_blank" >preview</a> */}
-                <a
-                  className='mobilebtn'
-                  target="_blank"
-                  onClick={() => show('')}>preview
-                </a>
-                <a className='mobilebtn' href="https://github.com/Divyakush13/voice-assistant" target="_blank" >Buy</a>
-              </div>
-
-            </div>
-
 
             <div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
               <div className="content">
@@ -254,7 +254,7 @@ const Feature = () => {
             <div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
               <div className="content">
                 <div className="imgBx">
-                  <img src="https://devtechnosys.com/insights/wp-content/uploads/2021/02/tinder-like-app.gif" alt="src\Images\girl.png" />
+                  <img src="https://cdn.dribbble.com/users/844846/screenshots/3279075/media/59e467417b2464acb3c5aad6980fbc6c.gif" alt="src\Images\girl.png" />
                 </div>
                 <div className="contentBx">
                   <h3>Discover<br /><span>A Dating App</span></h3>
@@ -286,7 +286,7 @@ const Feature = () => {
             <div className="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
               <div className="content">
                 <div className="imgBx">
-                  <img src="https://www.cleveroad.com/images/article-previews/grocery-gif-3.gif" alt="src\Images\girl.png" />
+                  <img src="https://cdn.dribbble.com/users/3329910/screenshots/9876208/media/26f88b6839c675441aabcfd4f868e7bd.gif" alt="src\Images\girl.png" />
                 </div>
                 <div className="contentBx">
                   <h3>Kharido<br /><span>A Grocery Store</span></h3>
